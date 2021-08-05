@@ -1,0 +1,73 @@
+/* Personaliza la etiqueta (el contenedor) */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Ocultar la casilla de verificación predeterminada del navegador */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Crear una casilla de verificación personalizada */
+  .checkmark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 2px #ccc;
+    margin-right: 1rem;
+  }
+  
+  /* Al pasar el mouse, agregue un color de fondo gris */
+  .checkbox-container:hover input ~ .checkmark {
+    background-color:transparent;
+    border: solid 2px #fff;
+  }
+  
+  /* Cuando la casilla de verificación esté marcada, agregue un fondo azul */
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+    border: solid 2px #2196F3;
+  }
+  
+  /* Cree la marca de verificación / indicador (oculto cuando no está marcado) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Muestre la marca de verificación cuando esté marcado */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Estilo de la marca de verificación / indicador */
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

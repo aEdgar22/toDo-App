@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(0, 204, 255),rgb(94, 49, 255));
+}
+
+main{
+    background-color: #fff;
+    margin: 20vh auto;
+    width: 40vw;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px black;
+}
+
+h1{
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+input, select{
+ 
+    font-size: 1.5rem;
+   
+}
+
+input{
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    margin: 1.5rem;
+}
+
+#todos{
+    padding: 1.5rem;
+  
+}
+
+.todo{
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-self: center;
+    
+    
+}
+
+.todo:hover{
+
+    background-color:  rgb(40, 118, 163);
+    transition: all 0.5s ease;
+}
+
+.todo .checkbox-container{
+    width: calc(100% - 36px);
+
+
+}
+
+.todo button{
+    border: 0;
+    background: none;
+    background-image: url(delete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.801);
+  
+    
+}
+
+#list{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+
+}
+
+#list .list{
+    background: rgb(40, 118, 163);
+    width: 100%;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+
+}
+
+#add-container{
+    background-color: rgb(223, 222, 222);
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+    text-align: center;
+   
+}
+
+
+
+#add-container form select{
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    outline: none;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.flecha{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    transform: rotate(45deg);
+    text-align: center;
+}
+
